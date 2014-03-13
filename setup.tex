@@ -1,0 +1,55 @@
+%%% Dokumentenklasse Artikel
+%%% 12pt
+%%% A4
+%%% Titelseite
+%%% Nummerierung ohne endende Punkte zB. 1. ; 1.1.
+%%% einseitig
+\documentclass[fontsize=12pt,paper=a4,titlepage,numbers=noenddot,twoside=false,bibliography=totoc,toc=listof]{scrartcl}
+
+%%% Schriftart, Kodierung und Sprache
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{ngerman}
+\usepackage[ngerman]{babel}
+\usepackage{ae}
+
+%\usepackage{times}
+%\usepackage{german} % Alte Rechtschreibung
+
+\usepackage{setspace}
+
+%%% Grapfikpaket
+\usepackage{graphicx}
+
+%%% Randeinstellungen
+\usepackage[left=30mm,right=30mm,bottom=25mm,top=25mm]{geometry}
+
+%%% Blindtext
+\usepackage{lipsum}
+
+%%% Footer und Header
+%% headsepline - Headerlinie
+%% footsepline - Fusslinie
+%% mehr unter http://get-software.net/macros/latex/contrib/koma-script/doc/scrguide.pdf
+\usepackage[automark]{scrlayer-scrpage}
+
+%%% Formelkram falls gebraucht
+%\usepackage{amsmath}
+%\usepackage{amsfonts}
+%\usepackage{amssymb}
+
+\usepackage{enumerate}
+%\usepackage{listings}
+
+%%% Gedichte
+\usepackage{verse}
+
+%%% PDF Hyperlinks
+\usepackage[ngerman,plainpages=false,pdfpagelabels,pdfauthor={Doreen Stichel},pdftitle={Hausarbeit}]{hyperref}
+
+%%% Zeilenabstand 1,5
+\onehalfspacing
+
+%%% Extra Kommandos
+%% \punkte -> ...
+\newcommand*{\punkte}{\dots\unkern}

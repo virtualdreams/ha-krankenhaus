@@ -1,0 +1,40 @@
+%%% Setup
+\include{setup}
+
+%%% Hier beginnt das Dokument
+\begin{document}
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+%%% Footer und Header clearen
+\clearscrheadfoot
+
+%%% Titelseite
+%\include{title}
+
+%%%-Hinweis
+%\include{hinweis}
+
+%%% Inhaltsverzeichnis
+\include{toc}
+
+%%% Seitenzahl ab hier immer rechts
+\ofoot{\pagemark}
+\ihead{Hausarbeit Doreen Stichel}
+\pagestyle{scrheadings}
+
+%%% Inhalte
+\include{kapitel1}
+\include{kapitel2}
+
+%%% Quellenverzeichnis
+%\include{quellen}
+
+%%%Anhang
+%\include{anhang}
+
+%%% Selbstständigkeitserklärung
+%\include{selbst}
+
+\end{document}
