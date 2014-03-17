@@ -13,6 +13,9 @@
 %%% Hier beginnt das Dokument
 \begin{document}
 
+%%% römische nummerierung
+\pagenumbering{roman}
+
 \setcounter{secnumdepth}{5}
 \setcounter{tocdepth}{5}
 
@@ -30,19 +33,21 @@
 
 %%% Seitenzahl ab hier immer rechts
 \ofoot{\pagemark}
+%%% Name aufder linken Seite
 %\ihead{Hausarbeit Doreen Stichel}
+%%% Kapitelmarke auf der rechten Seite
 \ohead{\headmark}
 \pagestyle{scrheadings}
 
-%%% Ab hier erst die Seiten zählen
-\setcounter{page}{1}
+%%% arabische Nummerierung
+\pagenumbering{arabic}
 
 %%% Inhalte
-\include{kapitel1}
+\include{einleitung}
 \include{kapitel2}
 \include{kapitel3}
-\include{kapitel4}
-%\include{kapitel5}
+\include{fazit}
+\include{bild}
 
 %%% Quellenverzeichnis
 \include{quellen}
