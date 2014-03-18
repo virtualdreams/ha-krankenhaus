@@ -34,7 +34,7 @@
 %% headsepline - Headerlinie
 %% footsepline - Fusslinie
 %% mehr unter http://get-software.net/macros/latex/contrib/koma-script/doc/scrguide.pdf
-\usepackage[automark]{scrlayer-scrpage}
+\usepackage[automark,headsepline]{scrlayer-scrpage}
 
 %%% Formelkram falls gebraucht
 %\usepackage{amsmath}
@@ -48,6 +48,10 @@
 
 \usepackage[titles]{tocloft}
 \renewcommand{\cftdot}{}
+
+
+\usepackage{marginnote}
+\renewcommand*{\marginfont}{\footnotesize}
 
 %\usepackage{color}
 
